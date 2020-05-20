@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEWS"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:background="@color/grey"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:id="@+id/btn"/>
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:columnCount="2"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:rowCount="2"
+        android:background="@drawable/black_background">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_columnWeight="1"
+            android:padding="10dp"
+            android:hint="search"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey"
+
+            android:background="@drawable/black_background"
+
+            android:inputType="textPersonName"
+            android:text="Search" />
+
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:background="@drawable/black_background"
+            android:paddingRight="20dp"
+
+            android:drawableRight="@drawable/ic_search_black_24dp"
+
+            android:text="Button" />
+
+    </GridLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:id="@+id/recyclerview">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>
